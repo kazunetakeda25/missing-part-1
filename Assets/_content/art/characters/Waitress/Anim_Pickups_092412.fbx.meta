@@ -1,0 +1,1267 @@
+fileFormatVersion: 2
+guid: 5d45426523ed44f02a0c8170b12dd264
+ModelImporter:
+  fileIDToRecycleName:
+    100000: Fskin_L_Toe_Jnt_END
+    100002: Fskin_L_Ball_Jnt
+    100004: Fskin_L_Ankle_Jnt
+    100006: Fskin_L_Knee_Jnt
+    100008: Fskin_L_LowerLeg_Jnt
+    100010: Fskin_L_UpperLeg_Jnt
+    100012: Fskin_Hips_Jnt
+    100014: Fskin_COG_Jnt
+    100016: Fskin_Root_Jnt
+    100018: World_Scale_Node
+    100020: Waitress_geo
+    100022: Skinned_Mesh_Grp
+    100024: Tray_Tray1
+    100026: Fskin_L_Middle_Jnt01
+    100028: Fskin_L_Ring_Jnt05_END
+    100030: Fskin_L_Ring_Jnt04
+    100032: Fskin_L_Ring_Jnt03
+    100034: Fskin_L_Ring_Jnt02
+    100036: Fskin_L_Ring_Jnt01
+    100038: Fskin_L_Pinky_Jnt05_END
+    100040: Fskin_L_Pinky_Jnt04
+    100042: Fskin_L_Pinky_Jnt03
+    100044: Fskin_L_Pinky_Jnt02
+    100046: Fskin_L_Pinky_Jnt01
+    100048: Fskin_L_Hand_Jnt
+    100050: Fskin_L_Wrist_Jnt
+    100052: Fskin_L_LowerArm_Jnt
+    100054: Fskin_L_UpperArm_Jnt
+    100056: Fskin_L_Shoulder_Jnt
+    100058: Fskin_R_BotEyelid_Jnt02
+    100060: Fskin_R_BotEyelid_Jnt01
+    100062: Fskin_R_TopEyelid_Jnt02
+    100064: Fskin_R_TopEyelid_Jnt01
+    100066: Fskin_R_Eyeball_Jnt02_END
+    100068: Fskin_R_Eyeball_Jnt01
+    100070: Fskin_L_Eyeball_Jnt02_END
+    100072: Fskin_L_Eyeball_Jnt01
+    100074: Fskin_L_TopEyelid_Jnt02
+    100076: Fskin_L_TopEyelid_Jnt01
+    100078: Fskin_L_BotEyelid_Jnt02
+    100080: Fskin_L_BotEyelid_Jnt01
+    100082: Fskin_R_BotLip_Jnt01
+    100084: Fskin_R_BotLip_Jnt02
+    100086: Fskin_R_TopLip_Jnt02
+    100088: Fskin_R_TopLip_Jnt01
+    100090: Fskin_R_Nose_Jnt
+    100092: Fskin_R_Cheek_Jnt02
+    100094: Fskin_R_Cheek_Jnt01
+    100096: Fskin_R_Eyebrow_Jnt04
+    100098: Fskin_R_Eyebrow_Jnt03
+    100100: Fskin_R_Eyebrow_Jnt02
+    100102: Fskin_R_Eyebrow_Jnt01
+    100104: Fskin_L_BotLip_Jnt01
+    100106: Fskin_BotLip_Jnt
+    100108: Fskin_L_TopLip_Jnt02
+    100110: Fskin_L_BotLip_Jnt02
+    100112: Fskin_L_TopLip_Jnt01
+    100114: Fskin_TopLip_Jnt
+    100116: Fskin_L_Nose_Jnt
+    100118: Fskin_Nose_Jnt
+    100120: Fskin_L_Cheek_Jnt02
+    100122: Fskin_L_Cheek_Jnt01
+    100124: Fskin_L_Eyebrow_Jnt04
+    100126: Fskin_L_Eyebrow_Jnt03
+    100128: Fskin_L_Eyebrow_Jnt02
+    100130: Fskin_L_Eyebrow_Jnt01
+    100132: Fskin_Jaw_Jnt02_END
+    100134: Fskin_Jaw_Jnt01
+    100136: Fskin_Head_Jnt_END
+    100138: Fskin_Head_Jnt
+    100140: Fskin_Neck_Jnt
+    100142: Fskin_Spine_Jnt02
+    100144: Fskin_Spine_Jnt01
+    100146: Fskin_R_Toe_Jnt_END
+    100148: Fskin_R_Ball_Jnt
+    100150: Fskin_R_Ankle_Jnt
+    100152: Fskin_R_Knee_Jnt
+    100154: Fskin_R_LowerLeg_Jnt
+    100156: Fskin_R_UpperLeg_Jnt
+    100158: //RootNode
+    100160: Fskin_R_Hip_Jnt
+    100162: Fskin_L_Hip_Jnt
+    100164: Fskin_R_Rib_Jnt01
+    100166: Fskin_L_Rib_Jnt01
+    100168: Fskin_R_Elbow_Jnt
+    100170: Fskin_R_Twist_Jnt01
+    100172: Fskin_R_Twist_Jnt02
+    100174: Fskin_R_Thumb_Jnt04_END
+    100176: Fskin_R_Thumb_Jnt03
+    100178: Fskin_R_Thumb_Jnt02
+    100180: Fskin_R_Thumb_Jnt01
+    100182: Fskin_R_Index_Jnt05_END
+    100184: Fskin_R_Index_Jnt04
+    100186: Fskin_R_Index_Jnt03
+    100188: Fskin_R_Index_Jnt02
+    100190: Fskin_R_Index_Jnt01
+    100192: Fskin_R_Middle_Jnt05_END
+    100194: Fskin_R_Middle_Jnt04
+    100196: Fskin_R_Middle_Jnt03
+    100198: Fskin_R_Middle_Jnt02
+    100200: Fskin_R_Middle_Jnt01
+    100202: Fskin_R_Ring_Jnt05_END
+    100204: Fskin_R_Ring_Jnt04
+    100206: Fskin_R_Ring_Jnt03
+    100208: Fskin_R_Ring_Jnt02
+    100210: Fskin_R_Ring_Jnt01
+    100212: Fskin_R_Pinky_Jnt05_END
+    100214: Fskin_R_Pinky_Jnt04
+    100216: Fskin_R_Pinky_Jnt03
+    100218: Fskin_R_Pinky_Jnt02
+    100220: Fskin_R_Pinky_Jnt01
+    100222: Fskin_R_Hand_Jnt
+    100224: Fskin_R_Wrist_Jnt
+    100226: Fskin_R_LowerArm_Jnt
+    100228: Fskin_R_UpperArm_Jnt
+    100230: Fskin_R_Shoulder_Jnt
+    100232: Fskin_R_Rib_Jnt02
+    100234: Fskin_L_Rib_Jnt02
+    100236: Fskin_L_Elbow_Jnt
+    100238: Fskin_L_Twist_Jnt01
+    100240: Fskin_L_Twist_Jnt02
+    100242: Fskin_L_Thumb_Jnt04_END
+    100244: Fskin_L_Thumb_Jnt03
+    100246: Fskin_L_Thumb_Jnt02
+    100248: Fskin_L_Thumb_Jnt01
+    100250: Fskin_L_Index_Jnt05_END
+    100252: Fskin_L_Index_Jnt04
+    100254: Fskin_L_Index_Jnt03
+    100256: Fskin_L_Index_Jnt02
+    100258: Fskin_L_Index_Jnt01
+    100260: Fskin_L_Middle_Jnt05_END
+    100262: Fskin_L_Middle_Jnt04
+    100264: Fskin_L_Middle_Jnt03
+    100266: Fskin_L_Middle_Jnt02
+    400000: Fskin_L_Toe_Jnt_END
+    400002: Fskin_L_Ball_Jnt
+    400004: Fskin_L_Ankle_Jnt
+    400006: Fskin_L_Knee_Jnt
+    400008: Fskin_L_LowerLeg_Jnt
+    400010: Fskin_L_UpperLeg_Jnt
+    400012: Fskin_Hips_Jnt
+    400014: Fskin_COG_Jnt
+    400016: Fskin_Root_Jnt
+    400018: World_Scale_Node
+    400020: Waitress_geo
+    400022: Skinned_Mesh_Grp
+    400024: Tray_Tray1
+    400026: Fskin_L_Middle_Jnt01
+    400028: Fskin_L_Ring_Jnt05_END
+    400030: Fskin_L_Ring_Jnt04
+    400032: Fskin_L_Ring_Jnt03
+    400034: Fskin_L_Ring_Jnt02
+    400036: Fskin_L_Ring_Jnt01
+    400038: Fskin_L_Pinky_Jnt05_END
+    400040: Fskin_L_Pinky_Jnt04
+    400042: Fskin_L_Pinky_Jnt03
+    400044: Fskin_L_Pinky_Jnt02
+    400046: Fskin_L_Pinky_Jnt01
+    400048: Fskin_L_Hand_Jnt
+    400050: Fskin_L_Wrist_Jnt
+    400052: Fskin_L_LowerArm_Jnt
+    400054: Fskin_L_UpperArm_Jnt
+    400056: Fskin_L_Shoulder_Jnt
+    400058: Fskin_R_BotEyelid_Jnt02
+    400060: Fskin_R_BotEyelid_Jnt01
+    400062: Fskin_R_TopEyelid_Jnt02
+    400064: Fskin_R_TopEyelid_Jnt01
+    400066: Fskin_R_Eyeball_Jnt02_END
+    400068: Fskin_R_Eyeball_Jnt01
+    400070: Fskin_L_Eyeball_Jnt02_END
+    400072: Fskin_L_Eyeball_Jnt01
+    400074: Fskin_L_TopEyelid_Jnt02
+    400076: Fskin_L_TopEyelid_Jnt01
+    400078: Fskin_L_BotEyelid_Jnt02
+    400080: Fskin_L_BotEyelid_Jnt01
+    400082: Fskin_R_BotLip_Jnt01
+    400084: Fskin_R_BotLip_Jnt02
+    400086: Fskin_R_TopLip_Jnt02
+    400088: Fskin_R_TopLip_Jnt01
+    400090: Fskin_R_Nose_Jnt
+    400092: Fskin_R_Cheek_Jnt02
+    400094: Fskin_R_Cheek_Jnt01
+    400096: Fskin_R_Eyebrow_Jnt04
+    400098: Fskin_R_Eyebrow_Jnt03
+    400100: Fskin_R_Eyebrow_Jnt02
+    400102: Fskin_R_Eyebrow_Jnt01
+    400104: Fskin_L_BotLip_Jnt01
+    400106: Fskin_BotLip_Jnt
+    400108: Fskin_L_TopLip_Jnt02
+    400110: Fskin_L_BotLip_Jnt02
+    400112: Fskin_L_TopLip_Jnt01
+    400114: Fskin_TopLip_Jnt
+    400116: Fskin_L_Nose_Jnt
+    400118: Fskin_Nose_Jnt
+    400120: Fskin_L_Cheek_Jnt02
+    400122: Fskin_L_Cheek_Jnt01
+    400124: Fskin_L_Eyebrow_Jnt04
+    400126: Fskin_L_Eyebrow_Jnt03
+    400128: Fskin_L_Eyebrow_Jnt02
+    400130: Fskin_L_Eyebrow_Jnt01
+    400132: Fskin_Jaw_Jnt02_END
+    400134: Fskin_Jaw_Jnt01
+    400136: Fskin_Head_Jnt_END
+    400138: Fskin_Head_Jnt
+    400140: Fskin_Neck_Jnt
+    400142: Fskin_Spine_Jnt02
+    400144: Fskin_Spine_Jnt01
+    400146: Fskin_R_Toe_Jnt_END
+    400148: Fskin_R_Ball_Jnt
+    400150: Fskin_R_Ankle_Jnt
+    400152: Fskin_R_Knee_Jnt
+    400154: Fskin_R_LowerLeg_Jnt
+    400156: Fskin_R_UpperLeg_Jnt
+    400158: //RootNode
+    400160: Fskin_R_Hip_Jnt
+    400162: Fskin_L_Hip_Jnt
+    400164: Fskin_R_Rib_Jnt01
+    400166: Fskin_L_Rib_Jnt01
+    400168: Fskin_R_Elbow_Jnt
+    400170: Fskin_R_Twist_Jnt01
+    400172: Fskin_R_Twist_Jnt02
+    400174: Fskin_R_Thumb_Jnt04_END
+    400176: Fskin_R_Thumb_Jnt03
+    400178: Fskin_R_Thumb_Jnt02
+    400180: Fskin_R_Thumb_Jnt01
+    400182: Fskin_R_Index_Jnt05_END
+    400184: Fskin_R_Index_Jnt04
+    400186: Fskin_R_Index_Jnt03
+    400188: Fskin_R_Index_Jnt02
+    400190: Fskin_R_Index_Jnt01
+    400192: Fskin_R_Middle_Jnt05_END
+    400194: Fskin_R_Middle_Jnt04
+    400196: Fskin_R_Middle_Jnt03
+    400198: Fskin_R_Middle_Jnt02
+    400200: Fskin_R_Middle_Jnt01
+    400202: Fskin_R_Ring_Jnt05_END
+    400204: Fskin_R_Ring_Jnt04
+    400206: Fskin_R_Ring_Jnt03
+    400208: Fskin_R_Ring_Jnt02
+    400210: Fskin_R_Ring_Jnt01
+    400212: Fskin_R_Pinky_Jnt05_END
+    400214: Fskin_R_Pinky_Jnt04
+    400216: Fskin_R_Pinky_Jnt03
+    400218: Fskin_R_Pinky_Jnt02
+    400220: Fskin_R_Pinky_Jnt01
+    400222: Fskin_R_Hand_Jnt
+    400224: Fskin_R_Wrist_Jnt
+    400226: Fskin_R_LowerArm_Jnt
+    400228: Fskin_R_UpperArm_Jnt
+    400230: Fskin_R_Shoulder_Jnt
+    400232: Fskin_R_Rib_Jnt02
+    400234: Fskin_L_Rib_Jnt02
+    400236: Fskin_L_Elbow_Jnt
+    400238: Fskin_L_Twist_Jnt01
+    400240: Fskin_L_Twist_Jnt02
+    400242: Fskin_L_Thumb_Jnt04_END
+    400244: Fskin_L_Thumb_Jnt03
+    400246: Fskin_L_Thumb_Jnt02
+    400248: Fskin_L_Thumb_Jnt01
+    400250: Fskin_L_Index_Jnt05_END
+    400252: Fskin_L_Index_Jnt04
+    400254: Fskin_L_Index_Jnt03
+    400256: Fskin_L_Index_Jnt02
+    400258: Fskin_L_Index_Jnt01
+    400260: Fskin_L_Middle_Jnt05_END
+    400262: Fskin_L_Middle_Jnt04
+    400264: Fskin_L_Middle_Jnt03
+    400266: Fskin_L_Middle_Jnt02
+    4300000: Tray_Tray1
+    4300002: Waitress_geo
+    7400000: Take 001
+    7400002: intro
+    7400004: intro //// Anim_Pickups_092412
+    11100000: //RootNode
+    13700000: Waitress_geo
+    13700002: Tray_Tray1
+    13700004: Fskin_R_Hand_Jnt
+  serializedVersion: 10
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    generateAnimations: 3
+    bakeSimulation: 0
+    splitAnimations: 1
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: intro
+      firstFrame: 4235
+      lastFrame: 4580
+      wrapMode: 0
+      loop: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMesh: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  textMetaNamesToFileIDs:
+    //RootNode:
+      data:
+        first: 1
+        second: 3e870100
+      data:
+        first: 4
+        second: 1e1b0600
+      data:
+        first: 111
+        second: 605fa900
+    Fskin_BotLip_Jnt:
+      data:
+        first: 1
+        second: 0a870100
+      data:
+        first: 4
+        second: ea1a0600
+    Fskin_COG_Jnt:
+      data:
+        first: 1
+        second: ae860100
+      data:
+        first: 4
+        second: 8e1a0600
+    Fskin_Head_Jnt:
+      data:
+        first: 1
+        second: 2a870100
+      data:
+        first: 4
+        second: 0a1b0600
+    Fskin_Head_Jnt_END:
+      data:
+        first: 1
+        second: 28870100
+      data:
+        first: 4
+        second: 081b0600
+    Fskin_Hips_Jnt:
+      data:
+        first: 1
+        second: ac860100
+      data:
+        first: 4
+        second: 8c1a0600
+    Fskin_Jaw_Jnt01:
+      data:
+        first: 1
+        second: 26870100
+      data:
+        first: 4
+        second: 061b0600
+    Fskin_Jaw_Jnt02_END:
+      data:
+        first: 1
+        second: 24870100
+      data:
+        first: 4
+        second: 041b0600
+    Fskin_L_Ankle_Jnt:
+      data:
+        first: 1
+        second: a4860100
+      data:
+        first: 4
+        second: 841a0600
+    Fskin_L_Ball_Jnt:
+      data:
+        first: 1
+        second: a2860100
+      data:
+        first: 4
+        second: 821a0600
+    Fskin_L_BotEyelid_Jnt01:
+      data:
+        first: 1
+        second: f0860100
+      data:
+        first: 4
+        second: d01a0600
+    Fskin_L_BotEyelid_Jnt02:
+      data:
+        first: 1
+        second: ee860100
+      data:
+        first: 4
+        second: ce1a0600
+    Fskin_L_BotLip_Jnt01:
+      data:
+        first: 1
+        second: 08870100
+      data:
+        first: 4
+        second: e81a0600
+    Fskin_L_BotLip_Jnt02:
+      data:
+        first: 1
+        second: 0e870100
+      data:
+        first: 4
+        second: ee1a0600
+    Fskin_L_Cheek_Jnt01:
+      data:
+        first: 1
+        second: 1a870100
+      data:
+        first: 4
+        second: fa1a0600
+    Fskin_L_Cheek_Jnt02:
+      data:
+        first: 1
+        second: 18870100
+      data:
+        first: 4
+        second: f81a0600
+    Fskin_L_Elbow_Jnt:
+      data:
+        first: 1
+        second: 8c870100
+      data:
+        first: 4
+        second: 6c1b0600
+    Fskin_L_Eyeball_Jnt01:
+      data:
+        first: 1
+        second: e8860100
+      data:
+        first: 4
+        second: c81a0600
+    Fskin_L_Eyeball_Jnt02_END:
+      data:
+        first: 1
+        second: e6860100
+      data:
+        first: 4
+        second: c61a0600
+    Fskin_L_Eyebrow_Jnt01:
+      data:
+        first: 1
+        second: 22870100
+      data:
+        first: 4
+        second: 021b0600
+    Fskin_L_Eyebrow_Jnt02:
+      data:
+        first: 1
+        second: 20870100
+      data:
+        first: 4
+        second: 001b0600
+    Fskin_L_Eyebrow_Jnt03:
+      data:
+        first: 1
+        second: 1e870100
+      data:
+        first: 4
+        second: fe1a0600
+    Fskin_L_Eyebrow_Jnt04:
+      data:
+        first: 1
+        second: 1c870100
+      data:
+        first: 4
+        second: fc1a0600
+    Fskin_L_Hand_Jnt:
+      data:
+        first: 1
+        second: d0860100
+      data:
+        first: 4
+        second: b01a0600
+    Fskin_L_Hip_Jnt:
+      data:
+        first: 1
+        second: 42870100
+      data:
+        first: 4
+        second: 221b0600
+    Fskin_L_Index_Jnt01:
+      data:
+        first: 1
+        second: a2870100
+      data:
+        first: 4
+        second: 821b0600
+    Fskin_L_Index_Jnt02:
+      data:
+        first: 1
+        second: a0870100
+      data:
+        first: 4
+        second: 801b0600
+    Fskin_L_Index_Jnt03:
+      data:
+        first: 1
+        second: 9e870100
+      data:
+        first: 4
+        second: 7e1b0600
+    Fskin_L_Index_Jnt04:
+      data:
+        first: 1
+        second: 9c870100
+      data:
+        first: 4
+        second: 7c1b0600
+    Fskin_L_Index_Jnt05_END:
+      data:
+        first: 1
+        second: 9a870100
+      data:
+        first: 4
+        second: 7a1b0600
+    Fskin_L_Knee_Jnt:
+      data:
+        first: 1
+        second: a6860100
+      data:
+        first: 4
+        second: 861a0600
+    Fskin_L_LowerArm_Jnt:
+      data:
+        first: 1
+        second: d4860100
+      data:
+        first: 4
+        second: b41a0600
+    Fskin_L_LowerLeg_Jnt:
+      data:
+        first: 1
+        second: a8860100
+      data:
+        first: 4
+        second: 881a0600
+    Fskin_L_Middle_Jnt01:
+      data:
+        first: 1
+        second: ba860100
+      data:
+        first: 4
+        second: 9a1a0600
+    Fskin_L_Middle_Jnt02:
+      data:
+        first: 1
+        second: aa870100
+      data:
+        first: 4
+        second: 8a1b0600
+    Fskin_L_Middle_Jnt03:
+      data:
+        first: 1
+        second: a8870100
+      data:
+        first: 4
+        second: 881b0600
+    Fskin_L_Middle_Jnt04:
+      data:
+        first: 1
+        second: a6870100
+      data:
+        first: 4
+        second: 861b0600
+    Fskin_L_Middle_Jnt05_END:
+      data:
+        first: 1
+        second: a4870100
+      data:
+        first: 4
+        second: 841b0600
+    Fskin_L_Nose_Jnt:
+      data:
+        first: 1
+        second: 14870100
+      data:
+        first: 4
+        second: f41a0600
+    Fskin_L_Pinky_Jnt01:
+      data:
+        first: 1
+        second: ce860100
+      data:
+        first: 4
+        second: ae1a0600
+    Fskin_L_Pinky_Jnt02:
+      data:
+        first: 1
+        second: cc860100
+      data:
+        first: 4
+        second: ac1a0600
+    Fskin_L_Pinky_Jnt03:
+      data:
+        first: 1
+        second: ca860100
+      data:
+        first: 4
+        second: aa1a0600
+    Fskin_L_Pinky_Jnt04:
+      data:
+        first: 1
+        second: c8860100
+      data:
+        first: 4
+        second: a81a0600
+    Fskin_L_Pinky_Jnt05_END:
+      data:
+        first: 1
+        second: c6860100
+      data:
+        first: 4
+        second: a61a0600
+    Fskin_L_Rib_Jnt01:
+      data:
+        first: 1
+        second: 46870100
+      data:
+        first: 4
+        second: 261b0600
+    Fskin_L_Rib_Jnt02:
+      data:
+        first: 1
+        second: 8a870100
+      data:
+        first: 4
+        second: 6a1b0600
+    Fskin_L_Ring_Jnt01:
+      data:
+        first: 1
+        second: c4860100
+      data:
+        first: 4
+        second: a41a0600
+    Fskin_L_Ring_Jnt02:
+      data:
+        first: 1
+        second: c2860100
+      data:
+        first: 4
+        second: a21a0600
+    Fskin_L_Ring_Jnt03:
+      data:
+        first: 1
+        second: c0860100
+      data:
+        first: 4
+        second: a01a0600
+    Fskin_L_Ring_Jnt04:
+      data:
+        first: 1
+        second: be860100
+      data:
+        first: 4
+        second: 9e1a0600
+    Fskin_L_Ring_Jnt05_END:
+      data:
+        first: 1
+        second: bc860100
+      data:
+        first: 4
+        second: 9c1a0600
+    Fskin_L_Shoulder_Jnt:
+      data:
+        first: 1
+        second: d8860100
+      data:
+        first: 4
+        second: b81a0600
+    Fskin_L_Thumb_Jnt01:
+      data:
+        first: 1
+        second: 98870100
+      data:
+        first: 4
+        second: 781b0600
+    Fskin_L_Thumb_Jnt02:
+      data:
+        first: 1
+        second: 96870100
+      data:
+        first: 4
+        second: 761b0600
+    Fskin_L_Thumb_Jnt03:
+      data:
+        first: 1
+        second: 94870100
+      data:
+        first: 4
+        second: 741b0600
+    Fskin_L_Thumb_Jnt04_END:
+      data:
+        first: 1
+        second: 92870100
+      data:
+        first: 4
+        second: 721b0600
+    Fskin_L_Toe_Jnt_END:
+      data:
+        first: 1
+        second: a0860100
+      data:
+        first: 4
+        second: 801a0600
+    Fskin_L_TopEyelid_Jnt01:
+      data:
+        first: 1
+        second: ec860100
+      data:
+        first: 4
+        second: cc1a0600
+    Fskin_L_TopEyelid_Jnt02:
+      data:
+        first: 1
+        second: ea860100
+      data:
+        first: 4
+        second: ca1a0600
+    Fskin_L_TopLip_Jnt01:
+      data:
+        first: 1
+        second: 10870100
+      data:
+        first: 4
+        second: f01a0600
+    Fskin_L_TopLip_Jnt02:
+      data:
+        first: 1
+        second: 0c870100
+      data:
+        first: 4
+        second: ec1a0600
+    Fskin_L_Twist_Jnt01:
+      data:
+        first: 1
+        second: 8e870100
+      data:
+        first: 4
+        second: 6e1b0600
+    Fskin_L_Twist_Jnt02:
+      data:
+        first: 1
+        second: 90870100
+      data:
+        first: 4
+        second: 701b0600
+    Fskin_L_UpperArm_Jnt:
+      data:
+        first: 1
+        second: d6860100
+      data:
+        first: 4
+        second: b61a0600
+    Fskin_L_UpperLeg_Jnt:
+      data:
+        first: 1
+        second: aa860100
+      data:
+        first: 4
+        second: 8a1a0600
+    Fskin_L_Wrist_Jnt:
+      data:
+        first: 1
+        second: d2860100
+      data:
+        first: 4
+        second: b21a0600
+    Fskin_Neck_Jnt:
+      data:
+        first: 1
+        second: 2c870100
+      data:
+        first: 4
+        second: 0c1b0600
+    Fskin_Nose_Jnt:
+      data:
+        first: 1
+        second: 16870100
+      data:
+        first: 4
+        second: f61a0600
+    Fskin_R_Ankle_Jnt:
+      data:
+        first: 1
+        second: 36870100
+      data:
+        first: 4
+        second: 161b0600
+    Fskin_R_Ball_Jnt:
+      data:
+        first: 1
+        second: 34870100
+      data:
+        first: 4
+        second: 141b0600
+    Fskin_R_BotEyelid_Jnt01:
+      data:
+        first: 1
+        second: dc860100
+      data:
+        first: 4
+        second: bc1a0600
+    Fskin_R_BotEyelid_Jnt02:
+      data:
+        first: 1
+        second: da860100
+      data:
+        first: 4
+        second: ba1a0600
+    Fskin_R_BotLip_Jnt01:
+      data:
+        first: 1
+        second: f2860100
+      data:
+        first: 4
+        second: d21a0600
+    Fskin_R_BotLip_Jnt02:
+      data:
+        first: 1
+        second: f4860100
+      data:
+        first: 4
+        second: d41a0600
+    Fskin_R_Cheek_Jnt01:
+      data:
+        first: 1
+        second: fe860100
+      data:
+        first: 4
+        second: de1a0600
+    Fskin_R_Cheek_Jnt02:
+      data:
+        first: 1
+        second: fc860100
+      data:
+        first: 4
+        second: dc1a0600
+    Fskin_R_Elbow_Jnt:
+      data:
+        first: 1
+        second: 48870100
+      data:
+        first: 4
+        second: 281b0600
+    Fskin_R_Eyeball_Jnt01:
+      data:
+        first: 1
+        second: e4860100
+      data:
+        first: 4
+        second: c41a0600
+    Fskin_R_Eyeball_Jnt02_END:
+      data:
+        first: 1
+        second: e2860100
+      data:
+        first: 4
+        second: c21a0600
+    Fskin_R_Eyebrow_Jnt01:
+      data:
+        first: 1
+        second: 06870100
+      data:
+        first: 4
+        second: e61a0600
+    Fskin_R_Eyebrow_Jnt02:
+      data:
+        first: 1
+        second: 04870100
+      data:
+        first: 4
+        second: e41a0600
+    Fskin_R_Eyebrow_Jnt03:
+      data:
+        first: 1
+        second: 02870100
+      data:
+        first: 4
+        second: e21a0600
+    Fskin_R_Eyebrow_Jnt04:
+      data:
+        first: 1
+        second: 00870100
+      data:
+        first: 4
+        second: e01a0600
+    Fskin_R_Hand_Jnt:
+      data:
+        first: 1
+        second: 7e870100
+      data:
+        first: 4
+        second: 5e1b0600
+    Fskin_R_Hip_Jnt:
+      data:
+        first: 1
+        second: 40870100
+      data:
+        first: 4
+        second: 201b0600
+    Fskin_R_Index_Jnt01:
+      data:
+        first: 1
+        second: 5e870100
+      data:
+        first: 4
+        second: 3e1b0600
+    Fskin_R_Index_Jnt02:
+      data:
+        first: 1
+        second: 5c870100
+      data:
+        first: 4
+        second: 3c1b0600
+    Fskin_R_Index_Jnt03:
+      data:
+        first: 1
+        second: 5a870100
+      data:
+        first: 4
+        second: 3a1b0600
+    Fskin_R_Index_Jnt04:
+      data:
+        first: 1
+        second: 58870100
+      data:
+        first: 4
+        second: 381b0600
+    Fskin_R_Index_Jnt05_END:
+      data:
+        first: 1
+        second: 56870100
+      data:
+        first: 4
+        second: 361b0600
+    Fskin_R_Knee_Jnt:
+      data:
+        first: 1
+        second: 38870100
+      data:
+        first: 4
+        second: 181b0600
+    Fskin_R_LowerArm_Jnt:
+      data:
+        first: 1
+        second: 82870100
+      data:
+        first: 4
+        second: 621b0600
+    Fskin_R_LowerLeg_Jnt:
+      data:
+        first: 1
+        second: 3a870100
+      data:
+        first: 4
+        second: 1a1b0600
+    Fskin_R_Middle_Jnt01:
+      data:
+        first: 1
+        second: 68870100
+      data:
+        first: 4
+        second: 481b0600
+    Fskin_R_Middle_Jnt02:
+      data:
+        first: 1
+        second: 66870100
+      data:
+        first: 4
+        second: 461b0600
+    Fskin_R_Middle_Jnt03:
+      data:
+        first: 1
+        second: 64870100
+      data:
+        first: 4
+        second: 441b0600
+    Fskin_R_Middle_Jnt04:
+      data:
+        first: 1
+        second: 62870100
+      data:
+        first: 4
+        second: 421b0600
+    Fskin_R_Middle_Jnt05_END:
+      data:
+        first: 1
+        second: 60870100
+      data:
+        first: 4
+        second: 401b0600
+    Fskin_R_Nose_Jnt:
+      data:
+        first: 1
+        second: fa860100
+      data:
+        first: 4
+        second: da1a0600
+    Fskin_R_Pinky_Jnt01:
+      data:
+        first: 1
+        second: 7c870100
+      data:
+        first: 4
+        second: 5c1b0600
+    Fskin_R_Pinky_Jnt02:
+      data:
+        first: 1
+        second: 7a870100
+      data:
+        first: 4
+        second: 5a1b0600
+    Fskin_R_Pinky_Jnt03:
+      data:
+        first: 1
+        second: 78870100
+      data:
+        first: 4
+        second: 581b0600
+    Fskin_R_Pinky_Jnt04:
+      data:
+        first: 1
+        second: 76870100
+      data:
+        first: 4
+        second: 561b0600
+    Fskin_R_Pinky_Jnt05_END:
+      data:
+        first: 1
+        second: 74870100
+      data:
+        first: 4
+        second: 541b0600
+    Fskin_R_Rib_Jnt01:
+      data:
+        first: 1
+        second: 44870100
+      data:
+        first: 4
+        second: 241b0600
+    Fskin_R_Rib_Jnt02:
+      data:
+        first: 1
+        second: 88870100
+      data:
+        first: 4
+        second: 681b0600
+    Fskin_R_Ring_Jnt01:
+      data:
+        first: 1
+        second: 72870100
+      data:
+        first: 4
+        second: 521b0600
+    Fskin_R_Ring_Jnt02:
+      data:
+        first: 1
+        second: 70870100
+      data:
+        first: 4
+        second: 501b0600
+    Fskin_R_Ring_Jnt03:
+      data:
+        first: 1
+        second: 6e870100
+      data:
+        first: 4
+        second: 4e1b0600
+    Fskin_R_Ring_Jnt04:
+      data:
+        first: 1
+        second: 6c870100
+      data:
+        first: 4
+        second: 4c1b0600
+    Fskin_R_Ring_Jnt05_END:
+      data:
+        first: 1
+        second: 6a870100
+      data:
+        first: 4
+        second: 4a1b0600
+    Fskin_R_Shoulder_Jnt:
+      data:
+        first: 1
+        second: 86870100
+      data:
+        first: 4
+        second: 661b0600
+    Fskin_R_Thumb_Jnt01:
+      data:
+        first: 1
+        second: 54870100
+      data:
+        first: 4
+        second: 341b0600
+    Fskin_R_Thumb_Jnt02:
+      data:
+        first: 1
+        second: 52870100
+      data:
+        first: 4
+        second: 321b0600
+    Fskin_R_Thumb_Jnt03:
+      data:
+        first: 1
+        second: 50870100
+      data:
+        first: 4
+        second: 301b0600
+    Fskin_R_Thumb_Jnt04_END:
+      data:
+        first: 1
+        second: 4e870100
+      data:
+        first: 4
+        second: 2e1b0600
+    Fskin_R_Toe_Jnt_END:
+      data:
+        first: 1
+        second: 32870100
+      data:
+        first: 4
+        second: 121b0600
+    Fskin_R_TopEyelid_Jnt01:
+      data:
+        first: 1
+        second: e0860100
+      data:
+        first: 4
+        second: c01a0600
+    Fskin_R_TopEyelid_Jnt02:
+      data:
+        first: 1
+        second: de860100
+      data:
+        first: 4
+        second: be1a0600
+    Fskin_R_TopLip_Jnt01:
+      data:
+        first: 1
+        second: f8860100
+      data:
+        first: 4
+        second: d81a0600
+    Fskin_R_TopLip_Jnt02:
+      data:
+        first: 1
+        second: f6860100
+      data:
+        first: 4
+        second: d61a0600
+    Fskin_R_Twist_Jnt01:
+      data:
+        first: 1
+        second: 4a870100
+      data:
+        first: 4
+        second: 2a1b0600
+    Fskin_R_Twist_Jnt02:
+      data:
+        first: 1
+        second: 4c870100
+      data:
+        first: 4
+        second: 2c1b0600
+    Fskin_R_UpperArm_Jnt:
+      data:
+        first: 1
+        second: 84870100
+      data:
+        first: 4
+        second: 641b0600
+    Fskin_R_UpperLeg_Jnt:
+      data:
+        first: 1
+        second: 3c870100
+      data:
+        first: 4
+        second: 1c1b0600
+    Fskin_R_Wrist_Jnt:
+      data:
+        first: 1
+        second: 80870100
+      data:
+        first: 4
+        second: 601b0600
+    Fskin_Root_Jnt:
+      data:
+        first: 1
+        second: b0860100
+      data:
+        first: 4
+        second: 901a0600
+    Fskin_Spine_Jnt01:
+      data:
+        first: 1
+        second: 30870100
+      data:
+        first: 4
+        second: 101b0600
+    Fskin_Spine_Jnt02:
+      data:
+        first: 1
+        second: 2e870100
+      data:
+        first: 4
+        second: 0e1b0600
+    Fskin_TopLip_Jnt:
+      data:
+        first: 1
+        second: 12870100
+      data:
+        first: 4
+        second: f21a0600
+    Skinned_Mesh_Grp:
+      data:
+        first: 1
+        second: b6860100
+      data:
+        first: 4
+        second: 961a0600
+    Tray_Tray1:
+      data:
+        first: 1
+        second: b8860100
+      data:
+        first: 4
+        second: 981a0600
+      data:
+        first: 137
+        second: a20bd100
+    Waitress_geo:
+      data:
+        first: 1
+        second: b4860100
+      data:
+        first: 4
+        second: 941a0600
+      data:
+        first: 137
+        second: a00bd100
+    World_Scale_Node:
+      data:
+        first: 1
+        second: b2860100
+      data:
+        first: 4
+        second: 921a0600
