@@ -1,0 +1,340 @@
+<head>
+  <style>
+  body{
+    font: 85% "Trebuchet MS", arial, hevetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+<h1>Mesh Baker 2.0</h1>
+<p>
+For the latest version of this document go to <a href=" http://www.digitalopus.ca/site/mesh-baker/">Digitalopus website.</a>
+</p>
+
+
+If you care about performance... combine meshes, combine meshes, combine meshes! The Asset Store is full of great models to use in your scene, but each of those models generates its own draw call, unless they use the same material. Mesh Baker can combine multiple meshes together, as well as combine the materials on those meshes into a single combined material (including building atlases). Mesh Baker can also modify multiple meshes (adjust UVs) so that they can share a material for static/dynamic batching.
+<ul>
+	<li>Objects to be combined do not need the same material or even the same shader</li>
+	<li>Works with any shader</li>
+	<li>Texture atlases are automatically generated</li>
+	<li>UVs, Normals &amp; Tangents automatically adjusted</li>
+	<li>Tiled textures can have tiling baked</li>
+	<li>Can map multiple materials to a combined mesh with multiple materials</li>
+	<li>Can combine many SkinnedMeshRenderers and MeshRenderers into a single SkinnedMeshRenderer</li>
+	<li>Animations on bones remain intact</li>
+	<li>Can customize SkinnedMeshRenerers by adding MeshRenderer objects (hats, glasses, weapons)</li>
+	<li>Does not touch source assets (creates new combined mesh and texture atlases)</li>
+	<li>No scripting required</li>
+	<li>Works with Unity3d Indy (free) version</li>
+	<li>Learn to use in five minutes or less</li>
+	<li>Easy to integrate into existing workflow</li>
+	<li>Adjust meshes so they can share a material (take advantage of static/dynamic batching)</li>
+	<li>Runtime API for baking on the fly</li>
+</ul>
+<div><iframe src="http://www.youtube.com/embed/HvJP8IahwIY" frameborder="0" width="420" height="315"></iframe></div>
+<div></div>
+<h1><strong>Use MeshBaker To</strong></h1>
+<ul>
+	<li>Combine meshes in your scene into one big mesh (meshes can be imported from any modeling program)</li>
+	<li>Easily create materials that can be shared by multiple meshes.</li>
+	<li>Fix models so they can share a material and take advantage of static/dynamic batching</li>
+	<li>Customize SkinnedMeshRenderer characters (add weapons, hats, armor, clothes)</li>
+	<li>Combine SkinnedMeshRenderers</li>
+	<li>Fix or adjust scaling, rotation and translation in imported meshes</li>
+</ul>
+<h1>Whats New In 2.0</h1>
+Mesh Baker 2.0 adds support for SkinnedMeshRenderers and refactors the code onto modular components that make Mesh Baker much more flexible.
+
+Mesh Baker has been split into two components: TextureBaker and MeshBaker. These can be used together or independently. TextureBaker saves the combined material information as an asset which can be used by any other MeshBaker object, including objects in other scenes. This makes combined materials much easier to reuse.
+<h1>Limitations</h1>
+<div>
+<ul>
+	<li>Texture properties in the result material will be combined into atlases, but the other properties can't be combined. There will only be one master set of non-texture properties that applies to the whole combined mesh.</li>
+	<li>Unity limits meshes to 64000 vertices and atlases to 4096x4096.</li>
+</ul>
+</div>
+<h1>Table Of Contents</h1>
+<ul>
+	<li><a href="#quickStart">Quick-start (Combining Meshs and Materials)</a></li>
+<ul>
+	<li><a href="#SkinnedMeshRenderers">Combining Skinned Meshes</a></li>
+</ul>
+	<li><a href="#bakeInPlace">Preparing Models For Static/Dynamic Batching (Bake Meshes In Place)</a></li>
+	<li><a href="#bakeTextureAtlases">Combining Meshes at Runtime (Bake Texture Atlases Only)</a></li>
+	<li><a href="#multipleMaterials">Multiple Materials</a></li>
+	<li><a href="#options">Options</a>
+<ul>
+	<li>Fix Out-Of-Bounds UVs</li>
+	<li>Atlas Padding</li>
+	<li>Resize Power of 2 Textures</li>
+	<li>Custom Shader Property Names</li>
+</ul>
+</li>
+	<li><a href="#bestPractices">Best Practices</a></li>
+	<li><a href="#runtimeUse">Runtime Use (Advanced)</a></li>
+</ul>
+<h1><a name="quickStart"></a>Quick-start (Combining Meshes and Materials)</h1>
+<ol>
+	<li>Create a new Mesh Baker object in your scene under the Game.</li>
+<ul>
+	<li>GameObject -&gt; Create Other -&gt; Mesh Baker -&gt; Mesh And Material Baker</li>
+</ul>
+	<li>Click 'Create Empty Assets For Combined Material'. This will create material assets for the combined material(s) and also an MB2_TextureBakeResults asset that contains information mapping materials to UV rectangles in the atlases.</li>
+	<li>Select shader on result material. Mesh Baker will build a texture atlas for each texture property in this shader.</li>
+	<li>Add objects to combine. For best results, these should use the same shader(s) as the combined material(s), but they don't have to. Use the provided tools to make this fast and easy.</li>
+	<li>Set any options then click 'Bake Materials into a Combined Material'.</li>
+	<li>Look at warnings / errors in the console. Decide if action needs to be taken.</li>
+	<li>In the MB2_MeshBaker component click 'Bake'.</li>
+	<li>(optional) Disable renderers in source objects.</li>
+</ol>
+Once this has been done, you can remove the Mesh Baker object from the scene or keep it around for easy re-baking. If anything changes in any of your source models or textures, just bake again to regenerate the combined mesh and texture atlases.
+<a name="SkinnedMeshRenderers"></a>
+<h1>Combining Skinned Meshes</h1>
+Combining SkinnedMeshRenderers is no different than combining ordinary meshes except that the "Render" field should be set to "SkinnedMeshRenderer". However, there are some things to consider when using SkinnedMeshRender components:
+<ul>
+	<li>You must leave the original SkinnedMeshRender object and its bones in the scene, since the original bones are used in the combined SkinnedMeshRender object. Disable the SkinnedMeshRender component on the source objects.</li>
+	<li>Animations on the original SkinnedMeshRender component should still work. <em><strong>If animations stop working after combining, check the "culling type" on the animation. </strong></em>You have a few choices:</li>
+<ul>
+	<li>Set the culling type to "Always animate" or something other than "based on renderers".</li>
+	<li>If you want to use culling type "based on renderers", then the Animation must be above the combined SkinnedMeshRenderer in the hierarchy. This is usually only possible if baking one skinned mesh.</li>
+</ul>
+	<li>SkinnedMeshRender objects to be combined do not need to share a common parent.</li>
+	<li><strong>You can combine MeshRenderer objects with SkinnedMeshRenderers.</strong> This is useful for adding hats, weapons, armor etc. to skinned characters. The transform that the MeshRenderer is attached to becomes a bone.</li>
+<ul>
+	<li>Parent the MeshRenderer object to the appropriate bone (for example a skinned character's hand)</li>
+	<li>Position, rotate and scale it correctly</li>
+	<li>Include it in the list of objects to be combined</li>
+</ul>
+	<li>If you want to make a prefab out of the combined SkinnedMeshRenderer, then all the bones must be descendants of the object you are prefabing.</li>
+	<li>You can customize characters by adding or removing swords, weapons, armour, etc. while the game is playing. To do so, you will need to bake everything that could possibly be added into the <strong>combined material</strong>. A subset of the objects should be baked into the <strong>combined mesh</strong>. Uncheck the Objects To Be Combined -&gt; "Same As Texture Baker" field. Then add this subset of objects that you want to combine in the mesh.</li>
+</ul>
+<h1>Recommended Workflow</h1>
+To use Mesh Baker quickly and efficiently, it is highly recommended that you use the "Tools For Adding Objects". These can save you hours of work.
+<ol>
+	<li>Add a Mesh Baker object to your scene.</li>
+	<li>Click "Open Tools For Adding Objects" and then "List Shaders In Scene"</li>
+<ul>
+	<li>Look at the report and warnings in the console and decide how you want to group objects. It is best to combine objects that use the same material first, then the same shader.</li>
+</ul>
+	<li>Add one Mesh Baker object for each combined mesh that you want</li>
+<ul>
+	<li>Combine objects by selecting them in the hierarchy and clicking "Add Selected Meshes". Mesh Baker crawls through the selected objects (including their children) and adds objects with Renderers attached. It applies the filters as it goes. You can filter by:</li>
+<ul>
+	<li><strong>Material</strong>:  only objects with this material will be added</li>
+	<li><strong>Shader</strong>:  only objects that use the same shader as the one in the provided material will be added</li>
+	<li><strong>Static</strong>:  only static objects will be added.</li>
+</ul>
+	<li>This makes it easy to add many objects quickly.</li>
+</ul>
+	<li>Bake the materials and meshes.</li>
+	<li>Keep the Mesh Baker objects around. You can disable them if you like. If any of your source objects change, then just re-bake.</li>
+</ol>
+If the source objects are needed in physics calculations or have scripts on them, you may want to keep the source objects in the scene with the render components disabled.
+<h1><a name="bakeInPlace"></a>Preparing Models For Static/Dynamic Batching (Bake Mesh Assets In Place)</h1>
+Unity's static/dynamic batching only works with meshes that use the same material. If you have meshes that use different materials, the "Bake Mesh Assets In Place" feature can create a combined material, and create duplicate copies of your meshes that are adjusted to use this combined material. The duplicate meshes (using the combined material) will now be batched by Unity.
+<ol>
+	<li>Create a new Mesh Baker object in your scene under the Game.</li>
+<ul>
+	<li>GameObject -&gt; Create Other -&gt; Mesh Baker -&gt; Mesh And Material Baker</li>
+</ul>
+	<li>Create combined material asset(s).</li>
+	<li>Select shader on result material(s). Mesh Baker will build a texture atlas for each texture property in these shaders.</li>
+	<li>Add objects to combine.<strong> These can be prefabs</strong><strong>. </strong>If you use scene objects, the translation/rotation/scaling will be baked into the saved meshes (which may not be what you want). You probably want the prefab at position (0,0,0), rotation (0,0,0) scale (1,1,1).</li>
+	<li>Set any options, then click 'Bake Materials into a Combined Material'.</li>
+	<li>Look at warnings / errors in the console. Decide if action needs to be taken.</li>
+	<li>Select output "bake mesh assets in place" and click "bake". This will create a new mesh asset for every mesh in the list of objects to combine. Look in the console for a list of all the meshes that were created.</li>
+	<li>For each prefab in the list of objects to combine.</li>
+<ul>
+	<li>Replace the mesh with the generated mesh</li>
+	<li>Replace the material(s) with the combined material(s)</li>
+</ul>
+</ol>
+<div>Your objects are now ready for static/dynamic batching!</div>
+<div></div>
+<div></div>
+<h1><a name="bakeTextureAtlases"></a>Combining Meshes at Runtime (Bake Texture Atlases Only)</h1>
+<div></div>
+<div><a href="#runtimeUse">See below. This is an advanced topic.</a></div>
+<div></div>
+<div></div>
+<h1><a name="multipleMaterials"></a>Multiple Materials:</h1>
+Mesh Baker can combine meshes with multiple materials into a combined mesh with multiple materials. You will need to define how materials on the objects to be combined should map to the materials on the results. Consider this trees example:
+
+<img title="Mapping" src="Mapping.png" alt="" width="700" height="260" />
+
+We want the bark source materials combined into the bark material, and the leaves source materials combined into the leaves materials.
+<ol>
+	<li>Create a new 'Combine Or Alter Meshes Baker' object in your scene under the GameObject menu.</li>
+<ul>
+	<li>GameObject -&gt; Create Other -&gt; Mesh Baker -&gt; Combine Or Alter Meshes Baker</li>
+</ul>
+	<li>Click the "Multiple Combined Materials" checkbox. Notice that the "Combined Material" field is replaced by a list of materials.</li>
+	<li>Click the "+" button to add two combined materials</li>
+	<li>Click "Create Empty Assets For Combined Material". If necessary drag material assets for the combined materials into the "Combined Material" field.for each combined material</li>
+	<li>Set the shaders on these materials to:</li>
+<ul>
+	<li>"Nature -&gt; Tree Soft Occlusion Bark"</li>
+	<li>"Nature -&gt; Tree Soft Occlusion Leaves"</li>
+</ul>
+	<li>Set the size of each source materials to 3 and drag the bark and leaf materials to the appropriate slots. Your mapping should look like this:</li>
+</ol>
+<div></div>
+<img class="alignleft size-full wp-image-356" title="inspector" src="inspector.png" alt="" width="446" height="975" />
+<h1><a name="options"></a>Options</h1>
+<div></div>
+<h2>Fix Out-Of-Bounds UVs</h2>
+<strong>What It Does:  </strong>Some models have UVs outside the range 0..1. This produces the same result as tiling. These meshes are hard to combine, because the tiling will pick up neiboring texures in the atlases. Fix Out-Of-Bounds UVs will scale the UVs in the model so that they fit inside the 0..1 range. Tiling will be baked into the combined texture.
+
+<strong>When To Use It:  </strong>The "List Shaders In Scene" report will tell you if you have UVs outside the range 0..1 on your models. Fix Out-Of-Bounds UVs is often the only way to have tiling models share textures in an atlas. Be aware that using this feature is sometimes not the best choice. For example, consider a castle model with many different parts (towers, walls, buttresses, etc). Each part tiles the same tiny brick texture. These can all be combined together (with tiling) provided the brick texture is the only texture in the atlas. This is probably a better choice than baking the tiling on each piece into one huge atlas.
+<h1>Atlas Padding</h1>
+<strong>What It Does:</strong>  Adds a clear border around the textures in your atlas so that adjacent textures don't bleed into each other.
+
+<strong>When To Use It:  </strong>Normally, a value of 1 or 2 pixels produces good results. If your textures to be combined already have a clear border, you could set the border to 0.
+<h2>Resize Power of 2 Textures</h2>
+<strong>What It Does:</strong>  If checked, this option shrinks power-of-two textures so they have a border of "atlas padding" around them. For example a 128x512 texture with 2-pixel padding is shrunk by 4 pixels, so that it is 128x512 after padding. This only affects power-of-two textures (32, 64, 128, 512)
+
+<strong>When To Use It:</strong>  You will usually want to leave this feature on. This option can dramatically reduce wasted space in the atlases. Unity's texture packer likes to jump by powers of two (eg.. 512x512 jumps to 512x1024). If you are combing two source textures that are 512x512 each then, after padding (514x514) the atlas will jump to 1024x2048. If you have textures that you really do not want resized, then turn this feature off or set the padding to 0.
+<h2>Custom Shader Property Names</h2>
+<strong>What It Does:</strong>  Mesh Baker looks at the properties in the combined mesh shader to decide which atlases to build. It has a list of built in texture property names to look for: "_MainTex", "_BumpMap", "_BumpSpecMap", "_DecalTex", "_Detail", "_GlossMap", "_Illum", "_LightTextureB0", "_ParallaxMap","_ShadowOffset", "_TranslucencyMap". If any of these are present, then it builds an atlas for that texture property.
+
+<strong>When To Use It:</strong>  If you are using a custom shader, then it may include a texture property that is not on this list. You can include this property by typing its name in the list of Custom Shader Property Names. Do not type the name that is visibile in the inspector. You will need to open the shader and look at list of properties and use the name from there.
+
+<h2>Lightmapping UVs:</h2>
+Instructs meshbaker what to do with the UV2 channel in the combined mesh. The UV2 channel in Unity is reserved for lightmapping.
+<ul>
+	<li><strong>ignore_UV2</strong>: No UV2 channel will be generated.</li>
+	<li><strong>copy_UV2_unchanged</strong>: Use this if all your source meshes use UV2 for a purpose other than lightmapping and you want these values preserved in the combined mesh.</li>
+	<li><strong>preserve_current_lightmapping: </strong>Use this if your source meshes are already lightmapped and you want to preserve the lightmap. All source meshes must use the same lightmap.</li>
+	<li><strong>generate_new_uv2_layout:</strong> Use this if you want to generate lightmaps using the combined mesh after it has been generated. Make sure that the combined scene object is 'static' and 'enabled' before baking lightmaps.</li>
+</ul>
+<div></div>
+	
+<h1><a name="bestPractices"></a>Best Practices</h1>
+For best results results, source meshes and materials should:
+<ul>
+	<li>Use the same shader</li>
+	<li>Have all textures present</li>
+	<li>Have all textures in a single material be the same size</li>
+</ul>
+The console is your friend. Look there for warnings and other information. Click on the line that says "Report" to see a list of all the textures that were combined and the objects they are on. This is useful for tracking down problems.
+
+Use the "List Shaders In Scene" report to plan what to combine in your scene.
+
+Experiment. Try different options to see what produces the best results.
+
+If textures are missing, a default empty texture will be created. If textures are different sizes, they will be copied and resized to the same size as the largest texture in each material.
+<h1><a name="runtimeUse"></a>Runtime Use (Advanced)</h1>
+If you want to add, delete or move objects in a combined mesh, then you will need to use the runtime API.
+<h3>How it works:</h3>
+<ul>
+	<li>When a MB2_TextureBaker creates combined materials, it creates an MB_TextureBakeResult asset which contains a mapping of materials to UV rectangles in the atlases. This normally happens in the editor. The MB2_TextureBaker can be removed from the scene after it has baked the combined material.</li>
+	<li>A MB2_MeshBaker component is added to the scene and the "Material Bake Result" field is set to the MB_TextureBakeResult asset created in the previous step.</li>
+	<li>At runtime, when an object is added, MB2_MeshBaker uses the object's material to look up the UV Rect. The mesh uvs are adjusted as the object is being added to the combined mesh.</li>
+	<li>The API has methods AddDeleteGameObject() and UpdateGameObject() for adding and deleting and updating the game objects. Apply() and ApplyAll() apply changes to the mesh.</li>
+</ul>
+<h3>Typical Use Pattern:</h3>
+The developer decides which objects he would like to be able to combine at runtime in each Mesh Baker instance.
+<ul>
+<ul>
+	<li>Create a "Combine Materials Only Baker"</li>
+	<li>Bake a Combined Material as per instructions described in previous sections</li>
+	<li>Add a MB2_MeshBaker component to the scene either from the GameObject menu or create an empty Game Object and add the script. The MB2_TextureBaker component won't be needed.</li>
+	<li>Set the "Material Bake Result" field to the asset generated in the material bake.</li>
+</ul>
+</ul>
+<div>This Mesh Baker instance is ready to be used at runtime. A typical use pattern would be:</div>
+<div></div>
+<div>
+<pre>using UnityEngine;
+using System.Collections;
+
+public class MB_Example : MonoBehaviour {
+
+  public MB2_MeshBaker meshbaker;
+  public GameObject prefab;
+
+  GameObject go1, go2;
+
+  void Start(){
+    // Instantiate some prefabs
+    go1 = (GameObject) Instantiate(prefab);
+    go1.transform.position = new Vector3(5f,5f,5f);
+
+    // Can use a prefab not baked into the materials to combine
+    // as long as it uses a material that has been baked
+    go2 = (GameObject) Instantiate(prefab);
+    go1.transform.position = new Vector3(5f,5f,5f);    
+
+    //Add the objects to the combined mesh
+    GameObject[] objsToCombine = new GameObject[2] {go1,go2};
+    meshbaker.AddDeleteGameObjects(objsToCombine, null);
+
+    //apply the changes we made this can be slow. See docs
+    meshbaker.ApplyAll();
+  }  
+
+  void Update () {
+    go1.transform.position =
+      new Vector3(5f,5f*Mathf.Sin(Time.time),5f);
+    go2.transform.position =
+      new Vector3(5f,5f, 5f*Mathf.Cos(Time.time));
+    GameObject[] objsToUpdate = new GameObject[2] {go1,go2};
+    meshbaker.UpdateGameObjects(objsToUpdate);
+  }
+
+  void LateUpdate(){
+    //Apply, after this and other scripts have made changes
+    //Only want to call this once per frame since it is slow
+	//Only change verts since it is slow to update everything
+    meshbaker.Apply(false,true,false,
+                    false,false,false,false,false);
+  }
+}</pre>
+</div>
+<h1><strong>API</strong></h1>
+<h2>EnableDisableSourceObjectRenderers(bool show)</h2>
+Disables or enables renderers on objects in "Objects To Be Combined"
+<br/>
+<br/>
+<strong>BuildSceneMeshObject()</strong>
+<br/>
+<br/>
+Creates a new GameObject. Adds a MeshRenderer, MeshFilter and sets them up on this MB_MeshBaker.
+<br/>
+<br/>
+<strong>ApplyAll()</strong>
+<br/>
+<br/>
+Applys the changes to all properties of the mesh. This is slower than Apply.
+<br/>
+<br/>
+<strong>Apply(bool triangles,bool vertices,bool normals,bool tangents,bool uvs,bool colors,bool uv1,bool uv2,bool bones)</strong>
+<br/>
+<br/>
+Applys the changes to flagged properties of the mesh. This method is slow, and should only be called once per frame. The speed is directly proportional to the number of flags that are true. Only apply necessary properties.
+<br/>
+<br/>
+<strong>UpdateGameObjects(GameObject[] gos, bool recalcBounds = true)</strong>
+<br/>
+<br/>
+Updates vertices, normals and tangents from gos of an object in the combined mesh. Use this if an object has moved, rotated, been scaled or been deformed. It can't be used if the number of vertices has changed. You need to call Apply or ApplyAll to see the changes.
+<br/>
+<br/>
+<strong>AddDeleteGameObjects(GameObject[] gos, GameObject[] deleteGOs, bool disableRendererInSource=true)</strong>
+<br/>
+<br/>
+Adds and deletes objects from the combined mesh. gos and deleteGOs can be null. You need to call Apply or ApplyAll to see the changes. This method is slow, so should be called as infrequently as possible.
+<br/>
+<br/>
+<strong>DestroyMesh()</strong>
+<br/>
+<br/>
+Destroys the mesh.
+<strong><em>Mesh Baker was created by Ian Deane. Other assets by Ian Deane include:</em></strong>
+<ul>
+	<li><strong><em>Fast Shadows</em></strong></li>
+	<li><strong><em>Ramp Brush</em></strong></li>
+	<li><strong><em>Crater Brush</em></strong></li>
+</ul>
+
+</body>
