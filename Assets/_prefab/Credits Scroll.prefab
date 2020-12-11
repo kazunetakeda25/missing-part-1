@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &154128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 22454128}
+  - 222: {fileID: 22254128}
+  - 114: {fileID: 11454132}
+  - 114: {fileID: 11454130}
+  - 114: {fileID: 11454128}
+  m_Layer: 5
+  m_Name: Credits Scroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &154130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 22454130}
+  - 222: {fileID: 22254130}
+  - 114: {fileID: 11454134}
+  m_Layer: 5
+  m_Name: About Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &154132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 22454132}
+  - 114: {fileID: 11454136}
+  m_Layer: 5
+  m_Name: Credits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &11454128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1367256648, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 22454130}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: .100000001
+  m_Inertia: 0
+  m_DecelerationRate: .135000005
+  m_ScrollSensitivity: 1
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &11454130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &11454132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &11454134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .713235259, g: .713235259, b: .713235259, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 1dd840c5b52504d708254207b4852ea8, type: 3}
+    m_FontSize: 42
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\n\n\n\n\n\n\n\n\n\n\n\n\nExecutive Producer\nJames Korris\n\nWritten by\nJames
+    Korris\n\nCTI Program Manager\nStephanie Granato\n\nLeidos Principal Investigator,
+    Program Manager\nCarl Symborski\n\nTechnical Director\nGrant Viklund\n\nCreative
+    Director\nArt Babayan \n\nProducer \nTravis Falstad\n\nCo-Producer\nLisa Jenkins\n\nSenior
+    Unity Engineer\nThom Denick \n\nMusic by\nJosh Rathbun\n\nSubject Matter Expert\nTodd
+    Paulsen\n\nUnity Engineer\nEd Vides\n\nProduction Coordinator\nAbigail Paulsen\n\nVideo
+    Post-Production\nCesar Barillas\n\nAnimator\nMorgan McDermott\n\nAnimator\nRobert
+    Weaver\n\nGraphic Artist\nPeter Kim\n\nQA Test Lead\nTristan Jackson\n\nQA Senior
+    Tester\nMelissa Dawe\n\nQA Testers\nDarnell King-Richards, Jake Du Mays, Louis-Phillippe
+    Gagnon, Marcio De Paula, Omer Gamliel Richard Demers\n\nCast\n\nWoman on Phone\nLisa
+    Jenkins\n\nTerry Hughes\nRossana Schneider\n\nMike\nJohn Kubin\n\nNarrator\nGeoff
+    Thompson\n\nOfficer #1, Barolo\nDuane Cunningham\n\nMegumi\nStacy Fong\n\nFlaherty\nJim
+    Curtis\n\nAssistant, Grantik\nRajiv Hasan\n\nSubject Matter Expert No. 1\nDr.
+    Mina Cikara, Harvard University\n\nSubject Matter Expert No. 2\nDr. Carey Morewedge,
+    Boston University\n\nLeidos Research Team\n\nPrincipal Investigator, Project Manager\nCarl
+    Symborski\n\nData Analysis, Play Testing\nMeg Barton\n\nPlay Testing Lead\nDr.
+    Mary Quinn\n\nData Analysis\nTed Yachik\n\nEngagement Measurement\nColeen Davis\n\nCognitive
+    Reinforcement Techniques\nDr. Ron Ferguson\n\nSubject Matter Expert \nDr. Rafael
+    Alonso\n\nSubject Matter Expert\nJeff Cooper\n\nBoston University Research Team\n\nPrincipal
+    Investigator, Cognitive Bias Research \nDr. Carey Morewedge\n\nExperimental Testing,
+    Analysis\nHaewon Yoon\n\nExperimental Testing, Analysis\nTaylor Turrisi\n\nCarnegie
+    Mellon University Research Team\n\nPrincipal Investigator, Cognitive Bias Research\nDr.
+    Karim Kassam \n\nExperimental Testing, Analysis, Cognitive Bias Research\nErin
+    McCormick\n\nExperimental Testing, Analysis, Cognitive Bias Research\nLauren Min\n\nExperimental
+    Testing, Analysis\nAbigail Dawson\n\nExperimental Testing, Analysis\nShane Schweitzer\n
+    \n  \n\n\n\n\n\n\n\n\n\n\n\n"
+--- !u!114 &11454136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb357c1fe1044d8991c1ead935441d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creditsFile: {fileID: 4900000, guid: ecfe5f042ff444890879c8ecaa95fef5, type: 3}
+  creditsText: {fileID: 11454134}
+  scroller: {fileID: 11454128}
+  scrollSpeed: .00999999978
+--- !u!222 &22254128
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154128}
+--- !u!222 &22254130
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154130}
+--- !u!224 &22454128
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 22454132}
+  - {fileID: 22454130}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 5, y: -121.000015}
+  m_SizeDelta: {x: 1135, y: 530.900024}
+  m_Pivot: {x: .5, y: .5}
+--- !u!224 &22454130
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 22454128}
+  m_RootOrder: 1
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 10, y: -3982}
+  m_SizeDelta: {x: 1120.31006, y: 8500}
+  m_Pivot: {x: .5, y: .5}
+--- !u!224 &22454132
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 22454128}
+  m_RootOrder: 0
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: .5, y: .5}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 154128}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
