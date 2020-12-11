@@ -1,0 +1,182 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+Executive Producer
+James Korris
+
+Written by
+James Korris
+
+CTI Program Manager
+Stephanie Granato
+
+Leidos Principal Investigator, Program Manager
+Carl Symborski
+
+Technical Director
+Bryan Dickson, Grant Viklund
+
+Creative Director
+Art Babayan 
+
+Producer 
+Travis Falstad
+
+Co-Producer
+Lisa Jenkins
+
+Creative Consultant
+Rob Sears
+
+Senior Unity Engineer
+Thom Denick
+
+“The Tempest” from the album Key of Sea
+by Jennifer Thomas
+www.jenniferthomasmusic.com 
+
+Music by
+Josh Rathbun
+
+Subject Matter Expert
+Todd Paulsen
+
+Unity Engineer	
+Herbie Piland
+
+Modeler
+Bryan Liddi
+
+Graphic Designer
+Stephen Eusebio
+
+Production Coordinator
+Abigail Paulsen
+
+Live-Action Video Production
+Kert Vandermeulen
+
+Animator
+Kinlyn Chou
+
+Jr. Game Designer
+James Clarendon
+
+Jr. Game Designer
+Ray Barrera
+
+Jr. Lighting
+Andrew Holdun
+
+Jr. Technical Artist
+Bert McLendon
+
+Video Post-Production
+Sam Woo
+
+Animator
+Morgan McDermott
+
+Graphic Artist
+Peter Kim
+
+Animator
+Robert Weaver
+
+Cast
+Mike, Officer #1
+John Kubin
+
+Narrator
+Geoff Thompson
+
+Stephanie
+Jen Sweeney
+
+Maureen, Paige
+Dawn McCoy
+
+Chris
+Jon Kobos
+
+Officer #2
+Travis Falstad
+
+Terry Hughes
+Rossana Schneider
+
+Subject Matter Expert No. 1	
+Dr. Carey Morewedge, Carnegie Mellon University
+
+Subject Matter Expert No. 2	
+Dr. Karim Kassam, Carnegie Mellon University
+
+Leidos Research Team
+
+Principal Investigator, Program Manager
+Carl Symborski
+
+Data Analysis, Play Testing	
+Meg Barton	
+
+Play Testing Lead
+Dr. Mary Quinn	
+
+Engagement Measurement
+Dr. Laurie Gibson	
+
+Cognitive Reinforcement Techniques
+Dr. Ron Ferguson	
+
+Data Analysis
+Ted Yachik	
+
+Subject Matter Expert
+Dr. Rafael Alonso	
+
+Subject Matter Expert
+Jeff Cooper	
+
+Data Analysis
+Dr. Hua Li
+
+Data Collection
+Mark Clark
+
+Carnegie Mellon University Research Team
+
+Principal Investigator, Cognitive Bias Research 
+Dr. Carey Morewedge	
+
+Co-Principal Investigator, Cognitive Bias Research           
+Dr. Karim Kassam	
+
+Experimental Testing, Cognitive Bias Research
+Dr. Irene Scopelliti	
+
+Experimental Testing, Analysis, Cognitive Bias Research
+Erin McCormick	
+
+Experimental Testing, Analysis, Cognitive Bias Research
+Lauren Min	
+
+Experimental Testing, Analysis
+Abigail Dawson	
+
+Experimental Testing, Analysis
+Peter Mans	
+
+Experimental Testing, Analysis
+Shane Schweitzer	
+
+All characters and other entities appearing in this work are fictitious. Any resemblance to real persons, dead or alive, or other real-life entities, past or present, is purely coincidental.
