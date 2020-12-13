@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a991024d1617ed4f978ff6c3c2b2f22, type: 1}
+  m_Name: combinedMaterial
+  combinedMaterialInfo:
+  - atlases:
+    - {fileID: 0}
+    texPropertyNames:
+    - 5f4d61696e546578
+  materials:
+  - {fileID: 2100000, guid: 702b257bdffd26d43bb6d09b885aff0c, type: 2}
+  prefabUVRects:
+  - x: 0
+    y: 0
+    width: 1
+    height: 1
+  resultMaterial: {fileID: 2100000, guid: c2cbcd309b312d6489c306475d74ff5a, type: 2}
+  resultMaterials: []
+  doMultiMaterial: 0
+  fixOutOfBoundsUVs: 0
