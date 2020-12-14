@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 42938266, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: PlayMakerGlobals
+  m_EditorClassIdentifier: 
+  variables:
+    floatVariables: []
+    intVariables: []
+    boolVariables: []
+    stringVariables: []
+    vector2Variables: []
+    vector3Variables: []
+    colorVariables: []
+    rectVariables: []
+    quaternionVariables: []
+    gameObjectVariables: []
+    objectVariables: []
+    materialVariables: []
+    textureVariables: []
+  events:
+  - init
+  - CinemaFadeIn
+  - CinemaFadeOut
+  - SHOWGUI
+  - HIDEGUI
+  - FreezePlayer
+  - FreezePlayerLook
+  - SetPlayerToNormal
+  - PHONE CLOSED
+  - PlayerRespEp1FAE1MoreTime
+  - StartE1V1
+  - Idle
+  - IdleLoop
+  - StartWalk
+  - StartMike
+  - Ep2Done
+  - FadeOutComplete
+  - StartEp2Interactive
+  - Receptionist -> Player
+  - Receptionist <-> Stephanie
+  - Steph -> Bookcase
+  - Steph -> Guard Point
+  - Steph -> Soriano
+  - Stephanie -> Player
+  - StartTerrysOffice
+  - RequestFadeIn
+  - RequestFadeOut
+  - StartFinalTree
+  - StartStephGreeting
+  - SkipToOffice
+  - StartOfficeSearch
+  - StartStephPhoneCall
+  - CopMovesToChris
+  - Chris -> Player (Looks)
+  - Chris -> Steph -> Player
+  - Chris <-> Stephanie (Looks)
+  - Chris, Steph, Terry -> Player
+  - Chris, Stephanie -> P{layer (Looks)
+  - Steph - > Chris
+  - Stephanie, Terry -> Chris
+  - Terry -> Cop
+  - Terry -> Player
+  - EndEp3InteractiveConfBiasEvent
+  - EndEp3StephanieSuspisions
+  - EndStephChrisBriefcase
+  - EndStephChrisEnter
+  - EndWaitressRomance
+  - StartWaitressSuspiciousGuys
+  - StartPoliceMove
+  - StartPoliceArrest
+  - StartStephanieSuspicions
+  - EndPoliceArrest
+  - EndWaitressSuspiciousGuys
+  - StartWaitressDrinkOrder
+  - EndWaitressDrinkOrder
+  - ShowGUIButtons
+  - SupressGUIButtons
+  - StartWaitressRomance
+  - StartStephChrisBriefcase
+  - CopMoveBehindChris
+  - PlayerRespChrisGuilty
+  - PlayerRespChrisInnocent
+  - Start Final Showdown
+  - PlayerRespStephATMReciepts
+  - PlayerRespStephAfricaTripEnvelope
+  - PlayerRespStephChrisUnknown
+  - PlayerRespStephGambling
+  - PlayerRespStephSubstanceAbuse
+  - PlayerRespStephUnsureEvidence
+  - StartStephChrisEnter
+  - StartEp3InteractiveBiasEvent
+  - Chris -> Terry
+  - Cop, Soriano, Look
+  - Cop2 -> Soriano
+  - Steph -> Briefcase
+  - Steph -> Terry
+  - Terry -> Chris
+  - Terry -> Stephanie
+  - Terry <-> Chris
+  - Waitress, Player Looks
+  - PlayerRespTerryGiveFlash
+  - PlayerRespTerryShowFlash
+  - StartArrest
+  - PlayerRespSampler
+  - PlayerRespFavor
+  - DoneSearching
+  - StartCopyProtection
+  - Copy Receptionist <-> Stephanie
+  - PlayerRespEp2CopyProtectionAnswer3
+  - PlayerRespEp2CopyProtectionAnswer2
+  - PlayerRespEp2CopyProtectionAnswer1
+  - StartBlackmail
+  - StartDeadlyTreatment
+  - PlayerRespEp2DeadlyTreatmentAnswer1
+  - PlayerRespEp2DeadlyTreatmentAnswer2
+  - PlayerRespEp2DeadlyTreatmentAnswer3
+  - PlayerRespEp2DeadlyTreatmentAnswer4
+  - PlayerRespEp2DeadlyTreatmentAnswer5
+  - Start AAR
+  - START_PLANTHUGGER
+  - LOADSAVE5
