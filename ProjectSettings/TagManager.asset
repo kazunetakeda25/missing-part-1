@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  tags:
+  - UIManager
+  - DoneSearching
+  - SubtitleMachine
+  - LevelManager
+  - GUICamera
+  - Loading Effect
+  - MainLight
+  - PausePopUp
+  - Third Person Cinema Camera
+  - First Person Cinema Camera
+  - First Person Camera Transform
+  - ClueHintMachine
+  - InspectObjectScreen
+  - SmartPhone
+  - CharacterSelector
+  - PlayerEyeline
+  - MapHotSpot
+  - Clue
+  - ResponseGrid
+  - SessionManager
+  - storyTeller
+  - 
+  Builtin Layer 0: Default
+  Builtin Layer 1: TransparentFX
+  Builtin Layer 2: Ignore Raycast
+  Builtin Layer 3: 
+  Builtin Layer 4: Water
+  Builtin Layer 5: 
+  Builtin Layer 6: 
+  Builtin Layer 7: 
+  User Layer 8: ceiling
+  User Layer 9: bg
+  User Layer 10: GUI
+  User Layer 11: LevelManager
+  User Layer 12: AAR
+  User Layer 13: Real Time Lighting
+  User Layer 14: Inspect
+  User Layer 15: Phone
+  User Layer 16: PhoneGUI
+  User Layer 17: Player
+  User Layer 18: Subtitles
+  User Layer 19: WalkLayer
+  User Layer 20: 
+  User Layer 21: 
+  User Layer 22: 
+  User Layer 23: 
+  User Layer 24: 
+  User Layer 25: 
+  User Layer 26: 
+  User Layer 27: 
+  User Layer 28: 
+  User Layer 29: 
+  User Layer 30: 
+  User Layer 31: 

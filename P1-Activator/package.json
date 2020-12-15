@@ -1,0 +1,30 @@
+{
+  "name": "p1-activator",
+  "version": "1.0.0",
+  "description": "TurboActivator for Missing - P1 - Search for Terry Hughes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "turboactivate",
+    "missing",
+    "search for terry hughes",
+    "electron"
+  ],
+  "author": "Rey",
+  "devDependencies": {
+    "electron-builder": "^22.6.1",
+    "electron": "^9.0.0"
+  },
+  "dependencies": {
+    "fix-path": "^3.0.0",
+    "os": "^0.1.1"
+  },
+  "build": {
+    "appId": "com.cretecinc.p1-activator",
+    "extraFiles": [
+      "native"
+    ]
+  }
+}
